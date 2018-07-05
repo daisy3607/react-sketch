@@ -537,10 +537,10 @@ class SketchField extends PureComponent {
                 newObj.originalState = newObj.toJSON();
             }
         }
-        if (this.props.onChange) {
-            let onChange = this.props.onChange;
+        if (this.props.onMouseUp) {
+            let onMouseUp = this.props.onMouseUp;
             setTimeout(() => {
-                onChange(e.e)
+                onMouseUp(e.e)
             }, 10)
         }
     };
